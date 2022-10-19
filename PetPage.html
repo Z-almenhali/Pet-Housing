@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="StyleSheet" href="mystyle.css">
+  <script type="text/javascript" src="jsdoc.js"></script>
+  <title>Pets</title>
+</head>
+
+<body>
+  <!-- Pet audio-->
+  <audio id="catAudio">
+    <source src="cat.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="dogAudio">
+    <source src="dog.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="birdAudio">
+    <source src="bird.mp3" type="audio/mpeg">
+  </audio>
+  <table>
+    <thead>
+      <!-- Pet page-->
+      <div class="container">
+        <div class="menu">
+          <ul style="font-weight: lighter;">
+            <li class="logo"><img src="pet-house.png" alt="logo of the website"></li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="PetPage.html">Pets</a></li>
+            <li><a href="ContactPage.php">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="words">
+          <h1> Pet Care </h1>
+          <p style="font-weight: lighter;">We serve pets of every type, age, and phase of life because we truly love
+            animals.
+            We show it with every belly rub, long walk, scratch behind the ear,
+            and treat we give. We’d love to be your trusted sidekick for a healthy and happy pet because we know we
+            can deliver trusted,
+            quality care and a professional, stress-free experience for you.
+          </p>
+          <ul>
+            Pet Housing give you some information that you need to know:
+            <li>Tips for taking care of your pet</li>
+            <li>Information about pet housing</li>
+          </ul>
+        </div>
+      </div>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <!-- Pet types section-->
+          <div class="petType">
+            <h2>Our Pets</h2>
+            <br>
+            <p>We strive to provide comfort for your pet through the good care that we provide during the period of your
+              pet's stay in our residence</p>
+            <div class="row">
+              <div class="petsCol">
+                <img src="newDog.png" alt="Dog picture">
+                <div class="textLayer">
+                  <h3><a href="https://iditarod.com/ten-tips-for-taking-care-of-your-dog/" target="_blank"
+                      onmouseover="playAnimalAudio('dog')">Dog</a></h3>
+                </div>
+              </div>
+              <div class="petsCol">
+                <img src="newCat.PNG" alt="Cat picture">
+                <div class="textLayer">
+                  <h3><a href="https://icatcare.org/advice/thinking-of-getting-a-cat/" target="_blank"
+                      onmouseover="playAnimalAudio('cat')">Cat</a></h3>
+                </div>
+              </div>
+              <div class="petsCol">
+                <img src="newBird.PNG" alt="Bird picture">
+                <div class="textLayer">
+                  <h3><a href="https://www.cleanipedia.com/za/family/pet-bird-care-how-to-look-after-a-bird.html"
+                      target="_blank" onmouseover="playAnimalAudio('bird')" onmouseout=" pauseBirdAudio()">Bird</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!-- Pet housing price section-->
+          <div class="petType">
+            <h2>Pet Housing Prices</h2>
+            <table class="petPrice">
+              <tr>
+                <th rowspan="2">Pets</th>
+                <th colspan="4">Price</th>
+              </tr>
+              <tr>
+                <th>Daily</th>
+                <th>Weekly</th>
+                <th>Monthly</th>
+              </tr>
+              <tr>
+                <td><b>Dog</b></td>
+                <td>20 SAR</td>
+                <td>110 SAR</td>
+                <td>500 SAR</td>
+              </tr>
+              <tr>
+                <td><b>Bird</b></td>
+                <td>10 SAR</td>
+                <td>50 SAR</td>
+                <td>150 SAR</td>
+              </tr>
+              <tr>
+                <td><b>Cat</b></td>
+                <td>15 SAR</td>
+                <td>80 SAR</td>
+                <td>300 SAR</td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>
+          <img src="student.png" alt="logo of student">
+          <p>Group Members</p>
+          <ul>
+            <li>Jumanah Jan 1808740 | </li>
+            <li>Fay Aldossary 1807565 | </li>
+            <li>Jamela Saad 1805925 | </li>
+            <li>Zehar Almenhali 1807627</li>
+          </ul>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

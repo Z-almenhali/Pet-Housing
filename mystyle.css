@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Rampart One', 'cursive';
+}
+.container{
+    width: 100%;
+    height: 60%;
+    background: #42455a;
+}
+
+/* Menu list */
+.menu ul{
+    display: inline-flex;
+    margin: 40px;
+    float: left;
+    font-weight: lighter;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 10px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+.menu ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.menu ul li ::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #f4e1fc;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li :hover::after{
+   width: 100%;
+}  
+.logo img{
+width: 40px;
+margin-top: -16px;
+margin-right: 10px;
+}
+
+/* Background for homepage table */
+.backGroundHome{
+    background-color:#42455a;
+}
+
+/*Home page*/
+.bannerText{
+    padding-top: 5%;
+    width: 80%;
+    margin-left: 130px;
+    color: white;
+    text-align: left;
+}
+.petText{
+    width: 50%;
+    float: left;
+}
+.petText h1{
+    font-size: 60px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+.petText p{
+    font-size: 15px;
+    width: 650px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: white;
+}
+.petImg{
+    width: 30%;
+    float: right;
+    margin-top: -60px;
+}
+.petText ul{
+    line-height: 25px;
+    margin-left: 40px;
+    color: white;
+}
+.petText li{
+    line-height: 25px;
+    margin-left: 20px;
+}
+.petText a{
+    color: white;
+    text-decoration: none;
+}
+
+/*other pages*/
+.welcom{
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid white;
+    padding:12px 34px;
+    margin-left: 42px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.welcom:hover{
+    border:1px solid #fce1e4;
+    background: #fce1e4;
+    transition: 1s;
+}
+
+/* Text on each page */
+.words{
+    color:white;
+    padding-top: 9%;
+    padding-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+.words h1{
+    font-size: 60px;
+}
+.words p{
+    margin: 20px 0 1px;
+    font-size: 15px;
+}
+.words ul{
+    font-size: 15px;
+    list-style: none;
+    line-height: 25px;
+    color: white;
+    font-weight: lighter;
+}
+.words li{
+    line-height: 25px;
+}
+.words a{
+    color: white;
+}
+
+/* Page table */
+table{
+    width: 100%;
+    height: 100%;
+    border-color: #42455a;
+    /*border: 1;  */
+}  
+/* tr color for two other pages */  
+tr {
+    background: #42455a;
+}
+
+/* Our pets section */
+.petType{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.petsCol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.petsCol img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.textLayer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.textLayer:hover{
+    background: rgba(255, 228, 207, 0.7);
+}
+.textLayer h3{
+    width: 100%;
+    font-weight: 600;
+    font-size: 35px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.textLayer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.textLayer a{
+    color: #523e3f;
+    text-decoration: none;
+}
+.petType th, td{
+    padding-top: 2%;
+    background-color: white;
+    text-align: center;
+}
+.petType h2{
+    color:#f56c04
+}
+.petType p{
+    color:#f59953;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Pet housing price section */
+/* Table inside pet housing price */
+tr td td{
+    background: white;
+    border: 1px solid #fca868;
+}
+.petPrice {
+    margin-top: 2%;
+    font-size: 22px;
+}
+.petPrice th{
+    padding: 5px;
+    background: #fca868;
+    color:white;
+}
+.petPrice td{
+    padding: 5px 20px;
+    color:#f56c04;
+}
+ 
+/* Foot of the table for each page */
+tfoot {
+    text-align: center;
+    color: #42455a;
+}
+tfoot img{
+    padding-top: 60px;
+    width: 50px;
+}
+tfoot ul{
+    padding-top: 3px;
+    list-style: none;
+    font-size:small;
+}
+tfoot li{
+    display: inline;
+}
+tfoot p{
+    font-size: smaller;
+}
+
+/*Contact page*/
+.information{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.ContactCol img{
+    width: 80px;
+    height: 80px;
+}
+.topic{
+    margin-top: 15px;
+    font-size: 25px;
+    color: #523e3f;
+    font-weight: 600;
+}
+.info{
+    margin-top: 6px;
+    font-size: 15px;
+    color: #e05a21;
+    font-weight: 600;
+}
+.info ul{
+   list-style: none; 
+   line-height: 20px;
+}
+.info a{
+    color: #e05a21;
+}
+
+/* form section*/
+.form{
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    padding-top: 60px;
+}
+.form h3{
+    color: #523e3f;
+}
+.form p{
+    color: #523e3f;
+}
+/* Text boxes, drop menu, radio buttons and submit*/
+input, select, textarea {
+    margin-bottom: 5px;
+    border: 1px solid #e05a21;
+    border-radius: 6px;
+}
+input {
+    width: 15%;
+    padding: 3px;
+    font-size: 15px;
+}
+select {
+    width: 26%;
+    background: transparent;
+    height: 4%; 
+    position: relative;
+    margin: 5px 0 10px;
+    top:-20px;
+    font-size: 15px;
+    padding: 3px 0;
+    color: #523e3f;
+}
+textarea {
+    width: 20%;
+    padding: 7px 36px;
+}
+.name-item:hover input, .question label:hover, input:hover::placeholder , .item select:hover, .item textarea:hover{
+    color: #42445A;
+}
+.Services{
+    position: relative;
+    margin: 10px 0;
+    top:-41px;
+}
+.Details{
+    position: relative;
+    margin: 10px 0;
+    top:-103px;
+}
+input[type=radio]  {
+    display: none;
+}
+label.radio {
+    position: relative;
+    display: inline-block;
+    margin: 5px 45px 50px 0;
+    color: #523e3f;
+}
+.question{
+    font-size: 20px;
+}
+.question span {
+    margin-left: 30px; 
+}
+label.radio:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+input[type=radio]:checked + label:before, label.radio:hover:before {
+    border: 2px solid #42445A;
+}
+label.radio:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 8px;
+    height: 4px;
+    border: 3px solid #42445A;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+input[type=radio]:checked + label:after {
+    opacity: 10;
+}
+.btn-block {
+    margin-top: -72px;
+    text-align: left;
+}
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px; 
+    background: #42445A;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+button:hover {
+    box-shadow: 0 0 18px 0 #3d2914;
+}
+@media (min-width: 568px) {
+    .name-item, .city-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.name-item input {
+    margin-right:70% ;
+    width: 25%;
+    height:3%;
+}}
+/* PHP Admin page*/
+
+/* Check button*/
+.btn-check {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.name-item p{
+    font-size: 20px;
+}
+.phone-item p{
+    font-size: 20px;
+    text-align: center;
+}
+/* Echo style */
+.EchoCss{
+    position: relative;
+    right: -300px;
+    top: 20px;
+    border:1px solid #42455a;
+    width:50%;
+    text-align: center;
+    font-size: 20px;
+    color: #e05a21;
+    padding: 5px;
+    
+}
+    
